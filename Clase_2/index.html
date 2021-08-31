@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Web de Presenatción</title>
+    <link rel="stylesheet" href="/css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div><img src="./img/mifoto.JPG" alt="mi foto" /></div>
+      <nav>
+        <!-- lista no ordenada -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quienessomosos.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <!-- lista numerada -->
+      <ol>
+        <li>Primer Paso</li>
+        <li>Segundo Paso</li>
+        <li>Tercer Paso</li>
+      </ol>
+    </div>
+    <h1>Video de presentación</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3YcwqbRaOqA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <h2>Información Personal</h2>
+    <h3>
+      Mi nombre es Pablo, Vivo en la Ciudad de Córdoba. Soy casado tengo tres
+      hijos, un varón y dos nenas.
+    </h3>
+    <h2>Información Laboral</h2>
+    <h3>Trabajo en una empresa de Telecomunicaciones.</h3>
+    <!-- <h4>encabezado h4</h4>
+    <h5>encabezado h5</h5>
+    <h6>Encabezado h6</h6> -->
+
+    <section>
+      <h2>Formulario</h2>
+      <form action="">
+        <fieldset>
+          <legend>Información Personal:</legend>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" />
+          <br />
+          <label for="edad">Edad</label>
+          <input type="text" name="edad" />
+          <br />
+          <label for="estadocivil">Estado Civil</label>
+          <input type="text" name="estadocivil" />
+          <br />
+          <label for="mail">Correo Electrónico</label>
+          <input type="text" name="mail" />
+          <br />
+          <label for="clave">Contraseña</label>
+          <input type="password" name="clave" />
+          <br />
+          <br />
+          <label for="talle">Seleccionar tu Talle</label>
+          <select name="talle" id="">
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <br />
+          <br />
+          <label for="">Consulta</label>
+          <br />
+          <textarea name="" id="" cols="30" rows="5"></textarea>
+          <br /><br />
+          <input type="submit" value="Enviar Formulario" />
+          <input type="reset" value="Limpiar Formulario" />
+          <input type="button" value="Sin Acciones" />
+          <!-- boton sin acciones reservado para acciones como cambiar color u abir otra pestaña -->
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <article>
+        <p>
+          Me inscribí en la diplomatura Full Stack. Me encanta programar,
+          conozco algunos lenguajes de programación y quiero profundizar
+          conocimientos en desarrollo web. Mi formación es en electrónica y
+          sistemas, estudié ingeniería electrónica en la UTN, hasta completar el
+          cursado 4to año. Ademas complete el tercer año de Ingeniería de
+          sistemas. Completar la diplomatura es un desafío que quiero lograr
+          para mejorar mis competencias laborales.
+        </p>
+      </article>
+    </section>
+    <footer>Mail: pablorex2012@gmail.com</footer>
+  </body>
+</html>
