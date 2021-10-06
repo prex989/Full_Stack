@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
-    <title>Mi Web con Bootstrap</title>
+    <title>Mi Web Inicial</title>
     <!-- Bootstrap archivos compilados -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -33,7 +33,7 @@
             <a
               class="nav-link active text-light fw-bold"
               aria-current="page"
-              href="#"
+              href="/index.html"
               >Inicio</a
             >
           </li>
@@ -51,7 +51,7 @@
               >Propiedades
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Alquileres</a></li>
+              <li><a class="dropdown-item" href="./alquileres.html">Alquileres</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Ventas</a></li>
               <!-- <li><a class="dropdown-item" href="#">Agregar item en menu</a></li> -->
@@ -140,7 +140,7 @@
 
     <!----------Acerca de------------>
 
-    <div id="local" class="border-top border-2">
+    <div id="local" class="border-top border-2 fs-2">
       <div class="mapa"></div>
       <div class="wrapper">
         <h2>Ubicado en Calle Tillard 1454, Barrio Cofico, Córdoba Capital</h2>
@@ -166,7 +166,7 @@
           <!-- ---------Formulario-------- -->
 
     <div class="container" id="contenedor-formulario">
-      <div id="titulo-formulario" class="text-center mb-4">
+      <div id="formulario" class="text-center mb-4">
         <div>
           <img src="./img/support.jpeg" alt="Contacto" class="img-fluid" />
         </div>
@@ -187,7 +187,7 @@
           <input
             type="text"
             class="form-control"
-            id="nombre"
+            id="name"
             placeholder="Juan Perez"
             required
           />
@@ -201,16 +201,17 @@
             required
           />
         </div>
+        
         <div class="mb-3">
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="textomensaje"
             rows="3"
             placeholder="Escribe tu Mensaje"
           ></textarea>
         </div>
         <div class="mb-3">
-          <button type="button" class="btn btn-primary w-100 fs-5">
+          <button type="submit" class="btn btn-primary w-100 fs-5" onclick="validarFormulario()">
             Enviar Mensaje
           </button>
         </div>
@@ -237,6 +238,6 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="main.js"></script>
+    <script src="/js/form.js"></script>
   </body>
 </html>
