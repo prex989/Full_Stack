@@ -1,0 +1,26 @@
+{
+  "name": "PROJECT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "npm run build-client && npm run start-server",
+    "dev-client": "env-cmd -f client.env npm start --prefix=frontend_react",
+    "build-client": "env-cmd -f client.env  npm run build --prefix=frontend_react",
+    "start-server": "env-cmd -f server.env npm start --prefix=backend_node",
+    "dev-server": "env-cmd -f server.env npm run dev --prefix=backend_node",
+    "dev": "concurrently \"npm:dev-*\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env-cmd": "^10.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  }
+}

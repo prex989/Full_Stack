@@ -1,0 +1,11 @@
+Ctrl + Shift + L -> coloca el cursor en cada coincidencia que se haya encontrado del texto seleccionado
+
+Ctrl + C -> matar un proceso en ejecucion
+
+git log -1 -> Muestra los commits del repo, el -1 mostrara un solo commit, el ultimo
+
+git config --local push.default current -> asigna por defecto la rama para hacer el push
+
+git merge --abort -> abortar el merge entre ramas
+
+git checkout jhoan_carrero -> moverme entre ramas
